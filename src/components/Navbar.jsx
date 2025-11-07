@@ -31,17 +31,25 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="h-9 w-9 rounded-xl bg-indigo-600 dark:bg-indigo-500 flex items-center justify-center text-white font-bold">
-            D
+            P
           </div>
-          <span className="font-semibold text-lg text-zinc-900 dark:text-zinc-100">Discord</span>
+          <span className="font-semibold text-lg text-zinc-900 dark:text-zinc-100">Pauds</span>
         </div>
-        <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
-          <a href="#features" className="text-zinc-700 dark:text-zinc-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Features</a>
-          <a href="#download" className="text-zinc-700 dark:text-zinc-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Download</a>
-          <a href="#safety" className="text-zinc-700 dark:text-zinc-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Safety</a>
-          <a href="#support" className="text-zinc-700 dark:text-zinc-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Support</a>
-        </nav>
-        <div className="flex items-center gap-3">
+        <nav className="flex items-center gap-6 text-sm font-medium">
+          <a
+            href="https://discord.gg/rTA4udVK"
+            target="_blank"
+            rel="noreferrer"
+            className="text-zinc-700 dark:text-zinc-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+          >
+            Discord
+          </a>
+          <a
+            href="#about"
+            className="text-zinc-700 dark:text-zinc-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+          >
+            Tentang Kami
+          </a>
           <button
             onClick={toggle}
             aria-label="Toggle dark mode"
@@ -49,13 +57,7 @@ export default function Navbar() {
           >
             {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
           </button>
-          <a
-            href="#download"
-            className="hidden sm:inline-flex items-center rounded-full bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-500 transition-colors"
-          >
-            Open Discord
-          </a>
-        </div>
+        </nav>
       </div>
     </header>
   );

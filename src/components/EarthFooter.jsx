@@ -8,40 +8,36 @@ export default function EarthFooter() {
         </div>
         <div className="mx-auto max-w-6xl px-6 py-12 grid grid-cols-2 md:grid-cols-4 gap-8">
           <div>
-            <h4 className="font-semibold mb-4">Product</h4>
+            <h4 className="font-semibold mb-4">Pauds</h4>
             <ul className="space-y-2 text-zinc-300 text-sm">
-              <li><a href="#features" className="hover:text-white">Features</a></li>
-              <li><a href="#download" className="hover:text-white">Download</a></li>
-              <li><a href="#nitro" className="hover:text-white">Nitro</a></li>
+              <li><a href="https://discord.gg/rTA4udVK" target="_blank" rel="noreferrer" className="hover:text-white">Discord</a></li>
+              <li><a href="#about" className="hover:text-white">Tentang Kami</a></li>
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold mb-4">Company</h4>
+            <h4 className="font-semibold mb-4">Komunitas</h4>
             <ul className="space-y-2 text-zinc-300 text-sm">
-              <li><a href="#about" className="hover:text-white">About</a></li>
-              <li><a href="#jobs" className="hover:text-white">Jobs</a></li>
-              <li><a href="#news" className="hover:text-white">Newsroom</a></li>
+              <li><a href="#events" className="hover:text-white">Event</a></li>
+              <li><a href="#collab" className="hover:text-white">Kolaborasi</a></li>
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold mb-4">Resources</h4>
+            <h4 className="font-semibold mb-4">Sumber Daya</h4>
             <ul className="space-y-2 text-zinc-300 text-sm">
-              <li><a href="#college" className="hover:text-white">College</a></li>
-              <li><a href="#support" className="hover:text-white">Support</a></li>
-              <li><a href="#safety" className="hover:text-white">Safety</a></li>
+              <li><a href="#guides" className="hover:text-white">Panduan</a></li>
+              <li><a href="#support" className="hover:text-white">Dukungan</a></li>
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold mb-4">Policies</h4>
+            <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-2 text-zinc-300 text-sm">
-              <li><a href="#terms" className="hover:text-white">Terms</a></li>
-              <li><a href="#privacy" className="hover:text-white">Privacy</a></li>
-              <li><a href="#cookies" className="hover:text-white">Cookie Settings</a></li>
+              <li><a href="#terms" className="hover:text-white">Ketentuan</a></li>
+              <li><a href="#privacy" className="hover:text-white">Privasi</a></li>
             </ul>
           </div>
         </div>
         <div className="border-t border-white/10 py-6 text-center text-sm text-zinc-400">
-          © {new Date().getFullYear()} Discord — Unofficial concept page.
+          © {new Date().getFullYear()} Pauds — Komunitas & portofolio.
         </div>
       </div>
     </footer>

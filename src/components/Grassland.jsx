@@ -2,22 +2,28 @@ import { motion } from 'framer-motion';
 
 export default function Grassland() {
   return (
-    <section className="relative">
-      <div className="relative w-full overflow-hidden bg-gradient-to-b from-emerald-50 to-emerald-100 dark:from-emerald-900 dark:to-emerald-950">
+    <section id="about" className="relative">
+      <div className="relative w-full overflow-hidden bg-gradient-to-b from-emerald-100 to-emerald-200 dark:from-emerald-900 dark:to-emerald-950">
         <div className="mx-auto max-w-6xl px-6 py-20">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-zinc-100">Tentang Pauds</h2>
+            <p className="mt-3 max-w-2xl mx-auto text-zinc-700 dark:text-zinc-300">
+              Server Discord untuk berkarya dan berjejaring. Showcase portofolio, kolaborasi, dan belajar bareng komunitas.
+            </p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                title: 'Create an invite-only space',
-                desc: 'Servers are organized into channels where you can collaborate, share, or just talk about your day without clogging up a group chat.'
+                title: 'Portfolio Showcase',
+                desc: 'Bagikan karya terbaikmu dan dapatkan feedback yang membangun dari komunitas.'
               },
               {
-                title: 'From few to a fandom',
-                desc: 'Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.'
+                title: 'Kolaborasi Proyek',
+                desc: 'Temukan rekan tim untuk hackathon, desain, dan proyek kreatif lainnya.'
               },
               {
-                title: 'Where hanging out is easy',
-                desc: 'Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around and instantly pop in to talk.'
+                title: 'Belajar Bersama',
+                desc: 'Ikut sesi diskusi mingguan dan sumber belajar yang terkurasi.'
               }
             ].map((card, i) => (
               <motion.div
@@ -35,9 +41,9 @@ export default function Grassland() {
           </div>
         </div>
 
-        {/* rolling hills */}
+        {/* professional grass gradient base */}
         <div className="relative h-24">
-          <div className="absolute -bottom-8 left-0 right-0 h-28 bg-gradient-to-t from-emerald-500 to-emerald-400 dark:from-emerald-800 dark:to-emerald-700 rounded-t-[100%]" />
+          <div className="absolute -bottom-8 left-0 right-0 h-28 bg-gradient-to-t from-emerald-500 via-emerald-400 to-emerald-300 dark:from-emerald-800 dark:via-emerald-700 dark:to-emerald-600 rounded-t-[100%]" />
         </div>
       </div>
     </section>
